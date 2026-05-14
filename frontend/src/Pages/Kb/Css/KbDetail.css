@@ -1,0 +1,68 @@
+.kb-detail-page {
+  max-width: 1180px;
+  margin: 28px auto;
+  padding: 0 24px 32px;
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+  background: #f5f6f8;
+}
+
+.kb-detail-header {
+  margin-bottom: 18px;
+}
+
+.kb-detail-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f1f1f;
+  margin: 0 0 6px;
+}
+
+.kb-detail-header p {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0;
+}
+
+.kb-detail-card {
+  max-width: 860px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+}
+
+.kb-detail-card h3 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  color: #111827;
+}
+
+.kb-detail-body {
+  white-space: pre-wrap;
+  line-height: 1.7;
+  color: #374151;
+  font-size: 15px;
+}
+
+.kb-detail-meta {
+  margin-top: 24px;
+  padding-top: 14px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.kb-detail-meta-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b7280;
+}
+
+.kb-detail-meta-value {
+  font-size: 14px;
+  color: #111827;
+  font-weight: 500;
+}

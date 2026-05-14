@@ -1,0 +1,291 @@
+.tickets-container {
+  max-width: 1180px;
+  margin: 28px auto;
+  padding: 0 24px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.tickets-header {
+  margin-bottom: 18px;
+}
+
+.tickets-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f1f1f;
+  margin: 0 0 6px;
+}
+
+.subtitle {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0;
+}
+
+.tickets-table-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.table-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 18px 12px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fafbfc;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.toolbar-left {
+  flex: 1;
+  min-width: 260px;
+}
+
+.toolbar-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.toolbar-subtitle {
+  margin: 4px 0 0;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.toolbar-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-width: 260px;
+  padding-top: 4px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+}
+
+.search-input-wrapper input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px 10px 36px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 13px;
+  transition: all 0.15s ease;
+  background: white;
+}
+
+.search-input-wrapper input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.search-icon {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.tickets-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tickets-table thead {
+  background: #f8fafc;
+}
+
+.tickets-table th {
+  padding: 14px 18px;
+  text-align: left;
+  font-weight: 600;
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tickets-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid #f1f5f9;
+  color: #374151;
+  vertical-align: middle;
+}
+
+.sortable-header {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.15s ease, background 0.15s ease;
+  white-space: nowrap;
+}
+
+.sortable-header:hover {
+  color: #2563eb;
+  background: #f4f8ff;
+}
+
+.sort-indicator {
+  margin-left: 6px;
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.sortable-header:hover .sort-indicator {
+  color: #2563eb;
+}
+
+.tickets-row {
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.tickets-row:hover {
+  background: #f9fbff;
+}
+
+.subject-cell {
+  font-weight: 500;
+  color: #111827;
+}
+
+.subject-link {
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.subject-link:hover {
+  color: #2563eb;
+}
+
+.ticket-link {
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.ticket-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -2px;
+  background-color: #2563eb;
+  transition: width 0.18s ease;
+}
+
+.ticket-link:hover {
+  color: #1d4ed8;
+}
+
+.ticket-link:hover::after {
+  width: 100%;
+}
+
+.priority-pill {
+  display: inline-block;
+  min-width: 78px;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.priority-pill.low {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.priority-pill.medium {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.priority-pill.high {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.priority-pill.urgent {
+  background: #fde2ff;
+  color: #a21caf;
+}
+
+.status-pill {
+  display: inline-block;
+  min-width: 74px;
+  text-align: center;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-pill.open {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.status-pill.new {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.status-pill.assigned {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.status-pill.resolved {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.status-pill.closed {
+  background: #e5e7eb;
+  color: #374151;
+}
+
+.assign-btn {
+  background: #0078ff;
+  border: none;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.15s ease;
+}
+
+.assign-btn:hover {
+  background: #005fcc;
+}
+
+.assign-btn:active {
+  transform: scale(0.96);
+}
+
+.no-tickets {
+  text-align: center;
+  padding: 40px 20px;
+  color: #6b7280;
+  font-size: 15px;
+}

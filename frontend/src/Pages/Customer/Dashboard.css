@@ -1,0 +1,163 @@
+/* === MAIN DASHBOARD CONTAINER === */
+.dashboard-container {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+/* === TITLE SECTION === */
+.dashboard-title-block {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 10px;
+}
+
+.dashboard-title-block h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+
+.dashboard-title-block p {
+  color: #666;
+  font-size: 15px;
+}
+
+
+/* === GRID SECTION (3 cards per row) === */
+.dashboard-grid {
+  max-width: 1100px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  /* ✅ EXACTLY 3 COLUMNS */
+  gap: 25px;
+}
+
+.dashboard-card {
+  background: white;
+  padding: 25px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dashboard-card:hover {
+  background: #f7f7f7;
+  border-color: #bdbdbd;
+}
+
+.card-icon {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.dashboard-card h3 {
+  margin-bottom: 6px;
+}
+
+.dashboard-card p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* RESPONSIVE BEHAVIOUR */
+@media (max-width: 900px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);  /* 2 columns */
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(1, 1fr);  /* 1 column */
+  }
+}
+
+
+/* ===================================================
+   ✅ POPUP OVERLAY (BLUR BACKGROUND)
+   =================================================== */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  backdrop-filter: blur(6px);     /* ✅ Background Blur */
+  background: rgba(0, 0, 0, 0.35); /* ✅ Dark dim */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 2000;
+}
+
+
+/* ===================================================
+   ✅ POPUP CONTAINER (CENTERED BOX)
+   =================================================== */
+.popup-container {
+  width: 350px;
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  text-align: center;
+
+  border: 1px solid #dcdcdc;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+  animation: popupFade 0.25s ease;
+}
+
+@keyframes popupFade {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+.popup-container input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+
+/* ===================================================
+   ✅ POPUP BUTTONS
+   =================================================== */
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.popup-btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.popup-btn.confirm {
+  background: #0078ff;
+  color: white;
+}
+
+.popup-btn.cancel {
+  background: #e0e0e0;
+}
+
+
+
+
+
+
+
+
+
+

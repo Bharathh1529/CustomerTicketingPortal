@@ -1,0 +1,133 @@
+.kb-page {
+  max-width: 1180px;
+  margin: 28px auto;
+  padding: 0 24px 32px;
+  font-family: "Segoe UI", sans-serif;
+  min-height: 100vh;
+  background: #f5f6f8;
+}
+
+.kb-header {
+  margin-bottom: 18px;
+}
+
+.kb-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f1f1f;
+  margin: 0 0 6px;
+}
+
+.kb-header p {
+  color: #6b7280;
+  font-size: 14px;
+  margin: 0;
+}
+
+.kb-card {
+  max-width: 820px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  padding: 24px;
+}
+
+.kb-form-group {
+  margin-bottom: 18px;
+}
+
+.kb-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.kb-form-group input,
+.kb-form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 11px 13px;
+  font-size: 14px;
+  color: #111827;
+  background: #ffffff;
+  outline: none;
+  transition: all 0.15s ease;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.kb-form-group input:focus,
+.kb-form-group textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.kb-form-group textarea {
+  min-height: 230px;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.kb-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.kb-save-btn,
+.kb-cancel-btn {
+  border: none;
+  border-radius: 8px;
+  padding: 11px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.kb-save-btn {
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.kb-save-btn:hover {
+  background: #1d4ed8;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.kb-cancel-btn {
+  background: #f3f4f6;
+  color: #111827;
+}
+
+.kb-cancel-btn:hover {
+  background: #e5e7eb;
+}
+
+@media (max-width: 768px) {
+  .kb-page {
+    padding: 0 14px 24px;
+  }
+
+  .kb-card {
+    padding: 18px;
+  }
+
+  .kb-header h2 {
+    font-size: 24px;
+  }
+
+  .kb-actions {
+    flex-direction: column;
+  }
+
+  .kb-save-btn,
+  .kb-cancel-btn {
+    width: 100%;
+  }
+}

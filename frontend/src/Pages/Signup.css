@@ -1,0 +1,144 @@
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #f4f6f8, #eef2f5);
+  padding: 30px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  margin-top: -50px;
+}
+
+.auth-brand {
+  background: #2b2b2b;
+  color: white;
+  padding: 24px 24px 20px;
+}
+
+.auth-brand-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.auth-logo {
+  background: #ffcc00;
+  color: #111;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.auth-brand-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.auth-brand-subtitle {
+  margin: 6px 0 0;
+  font-size: 13px;
+  color: #d6d6d6;
+}
+
+.auth-content {
+  padding: 26px 24px 28px;
+}
+
+.auth-content-center {
+  text-align: center;
+}
+
+.auth-content h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #1e1e1e;
+}
+
+.auth-description {
+  margin: 10px 0 22px;
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.auth-label {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 8px;
+  margin-top: 12px;
+}
+
+.auth-content input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.18s ease;
+  background: #fff;
+}
+
+.auth-content input:focus {
+  border-color: #0078ff;
+  box-shadow: 0 0 0 3px rgba(0, 120, 255, 0.12);
+}
+
+.auth-content button {
+  margin-top: 18px;
+  width: 100%;
+  padding: 13px;
+  background: #0078ff;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background 0.18s ease, transform 0.1s ease;
+}
+
+.auth-content button:hover {
+  background: #005fcc;
+}
+
+.auth-content button:active {
+  transform: scale(0.99);
+}
+
+.auth-link {
+  margin-top: 18px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.auth-link span {
+  color: #0078ff;
+  font-weight: 600;
+}
+
+.auth-link:hover span {
+  text-decoration: underline;
+}

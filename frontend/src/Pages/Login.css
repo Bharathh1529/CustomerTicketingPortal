@@ -1,0 +1,139 @@
+.login-page {
+  min-height: calc(100vh - 55px); /* reduce gap below navbar */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: linear-gradient(to bottom right, #f4f6f8, #eef2f5);
+  padding: 30px 20px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  margin-top: 100px;
+}
+
+.login-brand {
+  background: #2b2b2b;
+  color: white;
+  padding: 20px 24px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.login-logo {
+  background: #ffcc00;
+  color: #111;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.login-brand-title {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.login-brand-subtitle {
+  margin: 5px 0 0;
+  font-size: 13px;
+  color: #d6d6d6;
+}
+
+.login-content {
+  padding: 20px 24px 24px;
+  text-align: center;
+}
+
+.login-content h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #1e1e1e;
+}
+
+.login-description {
+  margin: 8px 0 12px; /* reduced gap */
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+
+.login-label {
+  display: block;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+  margin-top: 8px;
+}
+
+.login-content input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 14px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border: 1px solid #cfcfcf;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.18s ease;
+  background: #fff;
+}
+
+.login-content input:focus {
+  border-color: #0078ff;
+  box-shadow: 0 0 0 3px rgba(0, 120, 255, 0.12);
+}
+
+.login-content button {
+  margin-top: 16px;
+  width: 100%;
+  padding: 13px;
+  background: #0078ff;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 15px;
+  transition: background 0.18s ease, transform 0.1s ease;
+}
+
+.login-content button:hover {
+  background: #005fcc;
+}
+
+.login-content button:active {
+  transform: scale(0.99);
+}
+
+.login-link {
+  margin-top: 18px;
+  text-align: center;
+  color: #555;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.login-link span {
+  color: #0078ff;
+  font-weight: 600;
+}
+
+.login-link:hover span {
+  text-decoration: underline;
+}

@@ -1,0 +1,111 @@
+.navbar {
+  background-color: #2b2b2b;
+  color: white;
+  height: 55px;
+  padding: 0 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.navbar-logo {
+  background: #ffcc00;
+  color: black;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.navbar-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-link {
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.nav-link:hover {
+  opacity: 1;
+}
+
+/* ✅ USER SECTION */
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.user-avatar {
+  background-color: #444;
+  padding: 8px 12px;
+  border-radius: 50%;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.user-name {
+  font-size: 14px;
+}
+
+.dropdown-arrow {
+  font-size: 12px;
+  opacity: 0.7;
+}
+/* ✅ DROPDOWN (improved style only) */
+.dropdown-menu {
+  position: absolute;
+  top: 48px;
+  right: -10px;
+  background: #ffffff;
+  color: #222;
+  min-width: 150px;
+  border-radius: 8px;
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.25);
+  padding: 6px 0;
+  overflow: hidden;
+  z-index: 999;
+  animation: fadeDown 0.18s ease-out;
+}
+
+/* Each dropdown item */
+.dropdown-menu div {
+  padding: 12px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+/* Hover effect */
+.dropdown-menu div:hover {
+  background: #f5f5f5;
+}
+
+/* Smooth animation */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
